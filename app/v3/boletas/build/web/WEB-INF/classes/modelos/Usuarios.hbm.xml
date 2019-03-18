@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/03/2019 04:22:33 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Usuarios" table="usuarios" catalog="unimonito" optimistic-lock="version">
+        <id name="idUsuarios" type="java.lang.Integer">
+            <column name="idUsuarios" />
+            <generator class="identity" />
+        </id>
+        <property name="nombUsu" type="string">
+            <column name="NombUsu" length="200" not-null="true" />
+        </property>
+        <property name="cedulUsu" type="int">
+            <column name="CedulUsu" not-null="true" />
+        </property>
+        <property name="idPerfiles" type="int">
+            <column name="idPerfiles" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

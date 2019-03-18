@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/03/2019 04:22:33 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Rifa" table="rifa" catalog="unimonito" optimistic-lock="version">
+        <id name="idRifa" type="java.lang.Integer">
+            <column name="idRifa" />
+            <generator class="identity" />
+        </id>
+        <property name="idUsuarios" type="int">
+            <column name="idUsuarios" not-null="true" />
+        </property>
+        <property name="premio" type="string">
+            <column name="Premio" length="200" not-null="true" />
+        </property>
+        <property name="idBoleteria" type="int">
+            <column name="idBoleteria" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

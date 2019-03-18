@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/03/2019 04:22:33 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.TipoDeporte" table="tipo_deporte" catalog="unimonito" optimistic-lock="version">
+        <id name="idTipoDeporte" type="java.lang.Integer">
+            <column name="idTipo_Deporte" />
+            <generator class="identity" />
+        </id>
+        <property name="nombDepor" type="string">
+            <column name="NombDepor" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
